@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>turing</type>
+	<tapes>2</tapes>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>186.0</x>
+			<y>197.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>351.0</x>
+			<y>130.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>517.0</x>
+			<y>196.0</y>
+			<final/>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read tape="1">b</read>
+			<write tape="1">b</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">X</write>
+			<move tape="2">R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read tape="1">a</read>
+			<write tape="1">a</write>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2">X</write>
+			<move tape="2">R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read tape="1"/>
+			<write tape="1"/>
+			<move tape="1">L</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">R</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read tape="1"/>
+			<write tape="1"/>
+			<move tape="1">R</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">R</move>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read tape="1">c</read>
+			<write tape="1">c</write>
+			<move tape="1">R</move>
+			<read tape="2">X</read>
+			<write tape="2">X</write>
+			<move tape="2">L</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read tape="1">c</read>
+			<write tape="1">c</write>
+			<move tape="1">S</move>
+			<read tape="2"/>
+			<write tape="2"/>
+			<move tape="2">L</move>
+		</transition>
+	</automaton>
+</structure>
